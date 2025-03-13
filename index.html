@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseau social Books Post, Marine GAREIN</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Posts explorer</h1>
+        
+        <div class="search-section">
+            <label for="postIdInput">Posts: </label>
+            <input type="text" id="postIdInput" min="1" max="100" value="1" placeholder="From 1 to 100">
+            <button id="fetchButton">Search</button>
+        </div>
+        
+        <div id="errorMessage" style="color: red; display: none;"></div>
+        <div id="loader" style="display: none;">Loading...</div>
+        
+        <div id="postContainer" style="display: block;">
+
+            <h2 id="postTitle"></h2>
+            <div class="section">
+                <strong>Content:</strong>
+                <p id="postBody"></p>
+            </div>
+
+            <div class="section">
+                <strong>Tags:</strong> 
+                <div id="postTags"></div>
+            </div>
+
+            <div class="section">
+                <strong>Post ID:</strong> <span id="postIdDisplay"></span>
+            </div>
+
+            <div class="section">
+                <strong>User ID:</strong> <span id="userId"></span>
+            </div>
+
+            <div class="section">
+                <strong>Comments:</strong> <span id="postReactions"></span>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
